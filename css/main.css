@@ -1,0 +1,812 @@
+/*
+project name : elite corp. 
+project coder : Mahmoud M. 
+psd designer : 
+first color : #08526d
+first color:hover : #056284
+second color : #e81a2e
+second color:hover : #e31d1e
+*/
+
+/**********************************************
+.                                             .
+.                                             .     
+                start global styles
+.                                             .   
+.                                             .   
+************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-transparent {
+    background: rgba(0, 0, 0, 0)
+}
+
+.mainP {
+    max-width: 75%;
+    margin: 25px auto;
+    font-size: 20px;
+    font-weight: 400;
+    color: #666b6f;
+}
+
+@media (max-width:768px) {
+    .mainP {
+        max-width: 100%
+    }
+}
+
+.mainH2 {
+    font-weight: 600;
+
+}
+
+.mybutton {
+    color: #e31d1e;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    border: 1px solid #e31d1e;
+    width: 160px;
+    font-size: 20px;
+    transition: .4s all ease-in-out;
+}
+
+.mybutton:hover {
+    color: #fff;
+    background: #e31d1e;
+}
+
+.row {
+    margin: 0
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start upper bar section
+.                                             .   
+.                                             .   
+************************************************/
+
+.upper-bar {
+    color: #ddd;
+    background: #08526d;
+    padding-top: 10px;
+}
+
+.upper-bar i {
+    color: #fca9aa;
+    margin-right: 7px
+}
+
+.upper-bar .upper-bar-email {
+    color: #aaa;
+    transition: .2s
+}
+
+@media (min-width:992px) {
+    .upper-bar .upper-bar-email {
+        margin-left: 10px;
+    }
+}
+
+.upper-bar .upper-bar-email a {
+    color: #aaa
+}
+
+.upper-bar a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.upper-bar button {
+    color: #aaa;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #e81a2e;
+    padding: 2px 15px;
+    margin-left: 5px;
+    transition: .2s
+}
+
+.upper-bar button:hover {
+    color: #fff
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start navbar
+.                                             .   
+.                                             .   
+************************************************/
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: .4s all ease-in-out;
+    z-index: 1030;
+}
+
+.navbar .navbar-brand {
+    font-size: 40px;
+    font-weight: bold;
+    color: #08526d
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-nav .nav-link:hover {
+    color: #056284
+}
+
+.navbar .navbar-brand span,
+.navbar .navbar-nav .active .nav-link {
+    font-weight: normal;
+    color: #e81a2e
+}
+
+.navbar .navbar-brand:hover span,
+.navbar .navbar-nav .active .nav-link:hover {
+    color: #e31d1e
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #08526d;
+    font-weight: bold;
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start slider section
+.                                             .   
+.                                             .   
+************************************************/
+
+.slider .carousel-inner .item-1 {
+    background: url(../images/header-slider/header-1.jpg) no-repeat;
+
+}
+
+.slider .carousel-inner .item-2 {
+    background: url(../images/header-slider/header-2.jpg) no-repeat;
+
+}
+
+.slider .carousel-inner .item-3 {
+    background: url(../images/header-slider/header-3.jpg) no-repeat;
+
+}
+
+.slider .carousel-inner .item-4 {
+    background: url(../images/header-slider/header-4.jpg) no-repeat;
+
+}
+
+.slider .carousel-inner .carousel-item {
+    background-size: cover;
+}
+
+.slider .carousel-inner {
+    position: relative;
+}
+
+.slider .carousel-inner .welcome {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 3;
+    padding: 60px;
+
+}
+
+.slider .carousel-inner .welcome h1 {
+    font-size: 60px;
+}
+
+.slider .carousel-inner .welcome h1 span {
+    background: #e31d1e
+}
+
+@media (max-width: 576px) {
+    .slider .carousel-inner .welcome h1 {
+        font-size: 3px;
+    }
+}
+@media (max-width: 768px) {
+    .slider .carousel-inner .welcome h1 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .slider .carousel-inner .welcome h1 {
+        font-size: 50px;
+    }
+}
+
+.slider .carousel-inner .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, .6)
+}
+
+.slider .carousel-indicators li {
+    height: 8px;
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start features section
+.                                             .   
+.                                             .   
+************************************************/
+
+.features {
+    background: #fdfdfd;
+    padding: 50px 0
+}
+
+.features .row > div {
+    transition: .2s all ease-in-out
+}
+
+.features .row > div:hover {
+    transform: scale(1.1, 1.1)
+}
+
+.features i {
+    color: #fff;
+    background: #e31d1e;
+    padding: 10px;
+    width: 75px;
+    height: 75px;
+    line-height: 57px;
+    overflow: hidden
+}
+
+.features i.fa-cloud-upload-alt {
+    font-size: 43px;
+}
+
+.features h3 {
+    color: #09546b;
+    font-size: 1.7rem;
+}
+
+.features p {
+    color: #888;
+    font-weight: 400;
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start overview section
+.                                             .   
+.                                             .   
+************************************************/
+
+.overview {
+    padding: 90px;
+    background: #f0f5f8
+}
+
+.overview h4 {
+    font-size: 22px;
+    letter-spacing: 5px;
+    color: #686d70;
+    margin-bottom: 40px;
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start works section
+.                                             .   
+.                                             .   
+************************************************/
+
+.works {
+    padding: 90px 0 0
+}
+
+.works ul {
+    margin-top: 30px
+}
+
+.works ul li {
+    border: 1px solid #08526d;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    padding: 10px 5px;
+    color: #08526d;
+    font-weight: 500;
+    transition: .3s all ease-in-out;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.works ul li.active,
+.works ul li:hover {
+    background: #e31d1e;
+    color: #fff;
+    border-color: #e31d1e
+}
+
+.works .shuffle {
+    margin-top: 40px
+}
+
+.works .shuffle .row {
+    margin: 0px
+}
+
+.works .shuffle .work-item {
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    transition: .35s all ease-in-out
+}
+
+.works .shuffle .work-item .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 71, 108, 0.6);
+    display: none;
+    transition: .2s all ease-in-out;
+}
+
+.works .shuffle .work-item .overlay i {
+    margin-top: 40%;
+    color: #ddd;
+    transition: .2s all ease-in-out .2s
+}
+
+.works .shuffle .work-item:hover .overlay {
+    display: block
+}
+
+.works .shuffle .work-item:hover .overlay i {
+    color: #fff;
+    transform: scale(1.1, 1.1)
+}
+
+.works .shuffle .work-item img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    .works .shuffle .work-item {
+        margin-bottom: 15px
+    }
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start latest-posts section
+.                                             .   
+.                                             .   
+************************************************/
+
+.latest-posts {
+    background: #fdfdfd;
+    padding: 70px 0;
+}
+
+.latest-posts .card {
+    transition: .2s all ease-in-out;
+    margin-bottom: 20px
+}
+
+.latest-posts .card:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 5px 5px 10px #aaa,
+    -5px -5px 10px #aaa;
+}
+
+.latest-posts .card h3 {
+    color: #07536d;
+    font-size: 23px;
+    margin: 14px 0;
+}
+
+.latest-posts .card h6 {
+    font-size: 14px;
+    color: #9a9fa2
+}
+
+.latest-posts .card p {
+    color: #77787a;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.latest-posts .card a {
+    color: #f01c28;
+    font-weight: 500;
+    transition: .2s all ease-in-out;
+    margin: 5px;
+}
+
+.latest-posts .card a:hover {
+    color: #d3020e
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start team section
+.                                             .   
+.                                             .   
+************************************************/
+
+.team {
+    position: relative;
+    background: url(../images/team.jpg);
+    background-size: cover;
+}
+
+.team .overlay {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, .6)
+}
+
+.team .carousel {
+    z-index: 3
+}
+
+.team .carousel .carousel-indicators li {
+    height: 10px;
+}
+
+.team .carousel .carousel-inner .carousel-item {
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    padding: 90px 0;
+}
+
+.team .carousel .carousel-inner h4 {
+    font-size: 16px;
+    margin: -5px auto 30px;
+    font-weight: 400;
+}
+
+.team .carousel .carousel-inner p {
+    padding: 15px 100px 100px;
+}
+
+@media (max-width:500px) {
+    .team .carousel .carousel-inner p {
+        display: none
+    }
+}
+
+.team .carousel .carousel-controls a {
+    opacity: 1;
+    transition: .2s all ease-in-out
+}
+
+.team .carousel .carousel-controls a.carousel-control-prev {
+    background: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0))
+}
+
+.team .carousel .carousel-controls a.carousel-control-prev:hover {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+}
+
+.team .carousel .carousel-controls a.carousel-control-next {
+    background: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0))
+}
+
+.team .carousel .carousel-controls a.carousel-control-next:hover {
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+}
+
+.team .carousel .carousel-controls i {
+    width: 60px;
+    height: 60px;
+    background: #000;
+    vertical-align: middle;
+    line-height: 57px;
+    transition: .2s all ease-in-out
+}
+
+.team .carousel .carousel-controls a:hover i {
+    background: #ee1c25
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start pricing section
+.                                             .   
+.                                             .   
+************************************************/
+
+.pricing {
+    background: #f7f7f7;
+    padding: 50px 0
+}
+
+/*** card styling ***/
+
+.pricing .row .card {
+    background: #fff;
+    border-radius: 0;
+    border: none;
+    overflow: hidden;
+    box-shadow: 5px 5px 9px #ddd;
+    transition: .25s all ease-in-out;
+}
+
+.pricing .row .card .card-header {
+    background: #fff;
+    border: none;
+    padding: 30px 0 10px;
+}
+
+.pricing .row .card .card-header h3,
+.pricing .row .card .card-title {
+    color: #06536d;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.pricing .row .card .card-title {
+    background: #f7f7f7;
+    margin: 0px -30px 12px;
+    transition: .15s all ease-in-out;
+}
+
+.pricing .row .card .card-title span {
+    font-size: 20px
+}
+
+.pricing .row .card p {
+    color: #6e6f74
+}
+
+.pricing .row .card .card-body button {
+    margin: 20px auto;
+    border-width: 2px;
+}
+
+/*** hover effects ***/
+
+.pricing .row .card:hover {
+    transform: translateY(-15px)
+}
+
+.pricing .row .card:hover .card-title {
+    background: #ee1c25;
+    color: #fff;
+}
+
+.pricing .row .card:hover .card-body button {
+    color: #06536d;
+    border-color: #06536d;
+}
+
+.pricing .row .card .card-body button:hover {
+    background: #06536d;
+    color: #fff
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start why-us section
+.                                             .   
+.                                             .   
+************************************************/
+
+.why-us .why-us-p {
+    background: #06536d;
+}
+
+.why-us .why-us-p .why-us-p-wrapper {
+    padding: 100px 50px
+}
+
+.why-us .why-us-p button {
+    color: #fff;
+    background: #d62830;
+    margin-top: 40px;
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start stats section
+.                                             .   
+.                                             .   
+************************************************/
+
+.stats {
+    padding: 70px 0;
+    background: #fdfdfd
+}
+
+.stats-item {
+    margin-bottom: 15px
+}
+
+.stats-item:hover {
+    box-shadow: 5px 5px 7px #eee
+}
+
+.stats i {
+    color: #06536d;
+    font-size: 70px;
+}
+
+.stats h3 {
+    color: #06536d;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.stats p {
+    color: #d62830;
+    font-size: 20px;
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start contact section
+.                                             .   
+.                                             .   
+************************************************/
+
+.contact {
+    padding: 70px 0;
+    background: #ee1c25
+}
+
+.contact p {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.contact button {
+    background: #ee1c25;
+    border-color: #fff;
+    color: #fff;
+    width: 130px
+}
+
+.contact button:hover {
+    background: #fff;
+    border-color: #ee1c25;
+    color: #ee1c25;
+}
+
+/**********************************************
+.                                             .
+.                                             .     
+                start footer 
+.                                             .   
+.                                             .   
+************************************************/
+
+footer {
+    background: #f7f7f7
+}
+
+footer .container > .row {
+    padding: 100px 0
+}
+
+footer .shortcut h3 {
+    font-size: 50px;
+    color: #075770;
+    margin: 0 0 30px;
+}
+
+footer .shortcut h3 span {
+    color: #ee1c25;
+    font-weight: 300;
+}
+
+footer .shortcut p {
+    color: #5c646c;
+    width: 90%;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer a {
+    color: #00576b;
+    font-weight: 600;
+}
+
+footer .shortcut a {}
+
+footer .container > .row i {
+    border-radius: 50%;
+    background: #245c6a;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer .sitemap h3,
+footer .footer-contact h3 {
+    color: #075770;
+    margin: 30px 0;
+}
+
+@media (max-width:991px) {
+    footer .sitemap h3,
+    footer .footer-contact h3 {
+        margin: 60px 0 30px;
+    }
+}
+
+footer .sitemap a {
+    margin-left: 7px
+}
+
+footer .footer-contact p {
+    color: #686d71;
+    font-weight: 600;
+}
+
+footer .br {
+    border-bottom: 2px solid #aaa;
+}
+
+footer .copyright {
+    padding: 40px 0
+}
+
+footer .copyright .copy {
+    color: #686d71
+}
+@media (max-width:768px){
+    footer .copyright .copy{
+        margin-bottom: 25px
+    }
+}
+footer .copyright .copy span {
+    color: #ee1c25
+}
+
+footer .copyright .social i {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #aaa;
+}
+
+footer .copyright .social i:hover {
+    color: #000
+}
